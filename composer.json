@@ -1,0 +1,5 @@
+{
+    "require": {
+        "misd/linkify": "^1.1"
+    }
+}
