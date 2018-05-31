@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "39b5f8c4a3462b7e64121f39105ed9f5",
     "content-hash": "6d554d161f2f7ef6ec1d4e86651866ad",
     "packages": [
         {
             "name": "misd/linkify",
-            "version": "v1.1.3",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/misd-service-development/php-linkify.git",
-                "reference": "78c0da54f3e772cc569bb88d8dc8c46413bce4e7"
+                "reference": "3481b148806a23b4001712de645247a1a4dcc10a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/misd-service-development/php-linkify/zipball/78c0da54f3e772cc569bb88d8dc8c46413bce4e7",
-                "reference": "78c0da54f3e772cc569bb88d8dc8c46413bce4e7",
+                "url": "https://api.github.com/repos/misd-service-development/php-linkify/zipball/3481b148806a23b4001712de645247a1a4dcc10a",
+                "reference": "3481b148806a23b4001712de645247a1a4dcc10a",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +50,7 @@
                 "link",
                 "url"
             ],
-            "time": "2017-02-18T13:30:02+00:00"
+            "time": "2017-08-17 08:33:35"
         }
     ],
     "packages-dev": [],
