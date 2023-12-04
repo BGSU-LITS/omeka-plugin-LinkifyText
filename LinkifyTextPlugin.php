@@ -116,9 +116,16 @@ class LinkifyTextPlugin extends Omeka_Plugin_AbstractPlugin
      */
     public function hookConfigForm()
     {
+        // Get the current element set headings option, and then enable it.
+        $option = get_option('show_element_set_headings');
+        set_option('show_element_set_headings', 'true');
+
         // Get the Element table, and list of all elements from that table.
         $table = get_db()->getTable('Element');
         $pairs = $table->findPairsForSelectForm();
+
+        // Reset the element set headings option.
+        set_option('show_element_set_headings', $option);
 
         // Stores the IDs of each previously selected element.
         $ids = array();
