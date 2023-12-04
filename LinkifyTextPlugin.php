@@ -46,7 +46,7 @@ class LinkifyTextPlugin extends Omeka_Plugin_AbstractPlugin
         $key = key($this->_options);
 
         // Get all of the elements to be linkified.
-        $elements = unserialize(get_option($key));
+        $elements = unserialize((string) get_option($key));
 
         // If there are elements, add the linkifyText filter to each.
         if (is_array($elements)) {
@@ -165,7 +165,10 @@ class LinkifyTextPlugin extends Omeka_Plugin_AbstractPlugin
     public function linkifyText($text, $args)
     {
         // Check that there is text, and it is not HTML.
-        if (trim($text) != '' && empty($args['element_text']['html'])) {
+        if (
+            trim((string) $text) != '' &&
+            empty($args['element_text']['html'])
+        ) {
             // If the linkifier has not been loaded, load it now.
             if (empty($this->linkify)) {
                 require 'vendor/autoload.php';
